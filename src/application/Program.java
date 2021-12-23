@@ -22,6 +22,7 @@ public class Program {
 		
 		ProductService ps = new ProductService();
 		
+		//chama a função passando a lista e definindo o criterio do predicado 
 		double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == 'T');
 		
 		System.out.println("Sum = " + String.format("%.2f", sum));
